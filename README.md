@@ -14,3 +14,7 @@ sudo make install
 ```
 tbfc filename.bf > filename.c
 ```
+
+-----
+
+for help in terminal, you can type `man tbf2c`
