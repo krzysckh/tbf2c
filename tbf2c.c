@@ -2,7 +2,11 @@
 
 int main(int argc, char *argv[]) {
 	FILE *fp;
-	fp = fopen(argv[1], "r");
+	if (argv[1] == NULL) {
+		fp = stdin;
+	} else {
+		fp = fopen(argv[1], "r");
+	}
 	if (fp == NULL) {
 		printf("%s %s\n", "error: cannot open file: ", argv[1]);
 		return 1;
